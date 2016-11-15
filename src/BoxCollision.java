@@ -8,6 +8,7 @@ public class BoxCollision {
 	final static int width = 600;
 	final static int height = 600;
 	GamePanel panel;
+	
 	int x;
 	int y;
 	int rectwidth;
@@ -22,7 +23,7 @@ public class BoxCollision {
 	BoxCollision() {
 		frame = new JFrame();
 		panel = new GamePanel();
-
+		panel.start();
 	}
 
 	void setup() {
