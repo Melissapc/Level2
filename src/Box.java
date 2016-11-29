@@ -33,13 +33,25 @@ public class Box {
 	void draw(Graphics g) {
 		g.setColor(Color.pink);
 		g.fillRect(x, y, width, height);
+		
 
 	}
 void boundaryCheck(){
+	
 		if(x>600){
 			speedx=-speedx;
 		}
+		if(x<0){
+			speedx=-speedx;
+		}
+		if(y>600){
+			speedy=-speedy;
+		}
+		if(y<0){
+			speedy=-speedy;
+		}
 	}
+
 
 	void update() {
 		x = x + speedx;
