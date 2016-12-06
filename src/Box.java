@@ -12,7 +12,7 @@ public class Box {
 	int speedx;
 	int speedy;
 
-	Box(int width, int height,int x, int y,int speedx,int speedy, Color color) {
+	Box(int width, int height, int x, int y, int speedx, int speedy, Color color) {
 		this.width = width;
 		this.height = height;
 		this.x = x;
@@ -31,27 +31,26 @@ public class Box {
 	}
 
 	void draw(Graphics g) {
-		g.setColor(Color.pink);
+		g.setColor(color);
 		g.fillRect(x, y, width, height);
-		
 
 	}
-void boundaryCheck(){
-	
-		if(x>600){
-			speedx=-speedx;
+
+	void boundaryCheck() {
+
+		if (x > 600) {
+			speedx = -speedx;
 		}
-		if(x<0){
-			speedx=-speedx;
+		if (x < 0) {
+			speedx = -speedx;
 		}
-		if(y>600){
-			speedy=-speedy;
+		if (y > 600) {
+			speedy = -speedy;
 		}
-		if(y<0){
-			speedy=-speedy;
+		if (y < 0) {
+			speedy = -speedy;
 		}
 	}
-
 
 	void update() {
 		x = x + speedx;
