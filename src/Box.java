@@ -5,6 +5,7 @@ public class Box {
 	boolean empty;
 	boolean Alive;
 	Color color;
+
 	int width;
 	int height;
 	int x;
